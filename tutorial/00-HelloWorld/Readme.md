@@ -10,7 +10,7 @@ This tutorial will help you understand the followings:
 1. First of all, you need to build a callback server. And [here](./../../server) is the tutorial to build it.  
 2. Then copy config.py.sample to config.py and set the config.  
 3. Run ```python3 mission.py``` to send a basic mission to the api server.  
-4. After few seconds, the response will post to your callback server, and it will looks like:
+4. After a few seconds, the response will post to your callback server, and it will look like:
 
 ```
 {
@@ -90,5 +90,5 @@ This tutorial will help you understand the followings:
 ```
 
 The id is mission id given by api server.  
-The mission is what you post and add lots of default value, you will more clear understand how the commands have be executed.  
-The mission_result is most important thing we care about. Every execute will have a meta, it will let you know how many time, memory it used. And the record is encoded by base64. Decoding "aGVsbG8gd29ybGQK" will get the "hello world". One more thing you may keep in mind, if you want to record stdout/stderr, you must set the redirect file with stdout and stderr; otherwise, it will not be recorder.
+The mission is what you post and add lots of default values, you will understand more clearly how the commands have been executed.  
+The mission_result is most important part we care about. Every execute has a meta, it will let you know how many time, memory it used. And the record is encoded by base64. Decoding "aGVsbG8gd29ybGQK" will get "hello world". One more thing you need to keep in mind, if you want to record stdout/stderr, you must set the redirect file with stdout and stderr; Otherwise, it will not be recorded.
