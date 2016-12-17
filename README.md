@@ -323,7 +323,7 @@ Prepare and Final are the same format.
       <td>Integer</td>
       <td>Optional</td>
       <td><pre><code>65536</code></pre></td>
-      <td>How many Kib Bytes this command can use. It should be between 1 and 2097152(1KiB~2GiB). If the command uses more, it will cause error, and the error will be recorded and reported.</td>
+      <td>How many Kib Bytes this command can use. It should be between 1 and 8388608(1 KiB ~ 8 GiB). If the command uses more, it will cause error, and the error will be recorded and reported.</td>
     </tr>
     <tr>
       <td>time_limit</td>
@@ -389,7 +389,7 @@ Prepare and Final are the same format.
     "stderr": 1024
 }
       </code></pre></td>
-      <td>The "enable" is to enable the record, and the stdout/stderr are how many bytes you want to record, these value can be between 0 and 4096 (0 B~4KiB). Carefully, if you don't redirect stdout/stderr to a file, these stdout/stderr value you set is meaningless.
+      <td>The "enable" is to enable the record, and the stdout/stderr are how many bytes you want to record, these value can be between 0 and 131072 (0 B ~ 128 KiB). Carefully, if you don't redirect stdout/stderr to a file, these stdout/stderr value you set is meaningless.
       </td>
     </tr>
     <tr>
